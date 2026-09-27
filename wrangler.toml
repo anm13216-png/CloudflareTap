@@ -1,0 +1,15 @@
+name = "cloudflare-tap"
+main = "dist/worker.js"
+compatibility_date = "2024-09-01"
+
+# KV namespace ID 由 GitHub Actions 自动创建和填充
+# 本地开发时请手动替换为你的 KV namespace ID
+kv_namespaces = [
+  { binding = "CARD_ORDER", id = "PLACEHOLDER" }
+]
+
+[vars]
+DEFAULT_USER = "admin"
+ICON_API = "https://api.xinac.net/icon/?url="
+PREFER_ICON_API = "true"
+# ALLOWED_ORIGINS = "https://your-domain.com"

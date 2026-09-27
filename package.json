@@ -1,0 +1,25 @@
+{
+  "name": "cloudflare-tap",
+  "version": "2.0.0",
+  "description": "CloudflareTap - 个人导航书签页 (Cloudflare Workers)",
+  "main": "worker.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && wrangler dev dist/worker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axzcnzxis/CloudflareTap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/axzcnzxis/CloudflareTap/issues"
+  },
+  "homepage": "https://github.com/axzcnzxis/CloudflareTap#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
