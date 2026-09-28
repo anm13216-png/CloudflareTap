@@ -2,6 +2,12 @@ name: Deploy to Cloudflare Workers
 
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: '部署说明（可选）'
+        required: false
+        default: '手动部署'
+        type: string
 
 jobs:
   deploy:
